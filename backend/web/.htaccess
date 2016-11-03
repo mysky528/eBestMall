@@ -1,0 +1,6 @@
+#表示开启重写引擎
+RewriteEngine on
+#请求的文件或路径是不存在的，如果文件或路径存在将返回已经存在的文件或路径
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
