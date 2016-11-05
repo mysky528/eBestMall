@@ -104,5 +104,7 @@ tests                    包含高级应用程序的各种测试
 2016年11月3日  安装 AdminLTE 渲染 backend 界面
 2016年11月3日  配置 URL 路由   （backend/frontend）/config/main.php
 2016年11月4日  配置 RBAC 权限功能
+2016年11月4日  backend 管理员登录功能完成
 2016年11月4日  会员管理功能完成
+
 ```

@@ -21,6 +21,7 @@ AppAsset::register($this);
     <meta name="renderer" content="webkit">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <?php $this->head() ?>
 </head>
 <body>
