@@ -298,7 +298,6 @@ try {
 } catch(r) {}
 EvPNG.createVmlNameSpace();
 EvPNG.createVmlStyleSheet();
-EvPNG.fix("div, ul, img, li, input, a");
 /**
 Author: Evcn
 Email: evcn@163.com

@@ -241,19 +241,10 @@ ul.menu_r li a:hover, ul.menu_r li a.now{
     width:20px; height:21px; overflow:hidden; text-align:center; float:left; display:inline; margin-left:10px; margin-right:10px; margin-top:10px;
 }
 .leftNav ul li .n_img span{
-    width:20px;
-    height:21px;
-    vertical-align: middle;
-    /*display: inline-block;*/
-    /*IE8与标准游览器垂直对齐*/
-    display: table-cell;
+    height:100%; vertical-align:middle; display:inline-block;
 }
-.leftNav ul li .n_img span img{
-    display:block;/*让其具备盒子模型*/
-    margin:0 auto;
-    text-align:center;
-    margin-top:expression((500 - this.height )/2);/*让IE567垂直对齐 */
-    /*vertical-align:middle;*/
+.leftNav ul li .n_img img{
+    vertical-align:middle;
 }
 /*.leftNav ul li a{ color:#6e6e6e; }
 .leftNav ul li a:hover{ color:#e02d02; }*/
@@ -316,9 +307,6 @@ ul.menu_r li a:hover, ul.menu_r li a.now{
 .mar_20{
     margin-top:20px;
 }
-.mar_20 img{
-    float: left;
-}
 
 
 .i_ban_bg{
@@ -345,8 +333,8 @@ ul.menu_r li a:hover, ul.menu_r li a.now{
 /* op_btns */
 .banner .op_btns{ width:740px; margin-top:-730px;  position:relative; z-index:3; }
 .banner .op_btns .op_btn{display:block; width:32px; height:60px; cursor:pointer; overflow:hidden; position:absolute; margin-top:80px;  }
-.banner .op_btns .op_prev{ background:url(../images/b_left.png) no-repeat center top; left:0; top:412px; }
-.banner .op_btns .op_next{ background:url(../images/b_right.png) no-repeat center top; right:0; top:412px; }
+.banner .op_btns .op_prev{ background:url(../images/b_left.png) no-repeat center top; left:0; top:420px; }
+.banner .op_btns .op_next{ background:url(../images/b_right.png) no-repeat center top; right:0; top:420px; }
 .banner .op_btns .op_prev span, .banner .op_btns .op_next span{ display:block; width:32px; height:60px; margin:8px 0 0 17px; cursor:pointer; }
 .banner .op_btns .op_prev span{background-position:0 0;}
 .banner .op_btns .op_next span{background-position:-73px 0;margin-left:20px;}
@@ -359,7 +347,7 @@ ul.menu_r li a:hover, ul.menu_r li a.now{
 
 
 /*.ban_bg{
-	width:850px; height:430px; overflow:hidden; background-color:#FFF; float:left; -webkit-box-shadow:0 0 5px #e0e0e0; -moz-box-shadow:0 0 5px #e0e0e0; box-shadow:0 0 5px #e0e0e0;
+	width:850px; height:430px; overflow:hidden; background-color:#FFF; float:left; -webkit-box-shadow:0 0 5px #e0e0e0; -moz-box-shadow:0 0 5px #e0e0e0; box-shadow:0 0 5px #e0e0e0;  
 }
 .banner{
 	width:850px; height:430px; overflow:hidden; position:relative;
@@ -372,7 +360,7 @@ ul.menu_r li a:hover, ul.menu_r li a.now{
 .banner .ul_change_a2 li{
 	width:10px; height:10px; line-height:10px; overflow:hidden; float:left; display:inline-block; margin:0px 4px; cursor:pointer;
 }
-.banner .ul_change_a2 span{
+.banner .ul_change_a2 span{ 
 	width:10px; height:10px; line-height:10px; overflow:hidden; float:left; text-align:center; background:url(../images/b.png) no-repeat center top;
 }
 .banner .ul_change_a2 span.on { background:url(../images/b_h.png) no-repeat center top; }*/
@@ -1330,7 +1318,7 @@ table.choice tr td.td_a a:hover, table.choice tr td.td_a a.now{
 /*.l_history ul li .img img{
 	-webkit-transition:all .5s; -moz-transition:all .5s; -o-transform:all .5s; -ms-transform:all .5s; transition:all .5s;
 }
-.l_history ul li:hover .img img{
+.l_history ul li:hover .img img{	
 	-moz-transform:scale(1.1,1.1); -webkit-transform:scale(1.1,1.1); -o-transform:scale(1.1,1.1); -ms-transform:scale(1.1,1.1); transform:scale(1.1,1.1);
 }*/
 .l_history ul li .name{
@@ -2389,13 +2377,13 @@ ul.pay li.checked .ch_img{
     width:133px; height:140px; overflow:hidden; color:#888888; float:right; margin-top:5px;
 }
 .b_tel_bg a.b_sh1{
-    width:100%; height:35px; line-height:35px; overflow:hidden; background:url(../images/b_sh_1.png) no-repeat left center; color:#888888; font-size:14px; text-indent:32px; display:block;
+    width:100%; height:35px; line-height:35px; overflow:hidden; background:url(../images/b_sh_1.png) no-repeat left center; color:#888888; font-size:14px; text-indent:32px; display:inline-block;
 }
 .b_tel_bg a.b_sh1:hover{
     color:#ff4e00;
 }
 .b_tel_bg a.b_sh2{
-    width:100%; height:35px; line-height:35px; overflow:hidden; background:url(../images/b_sh_2.png) no-repeat left center; color:#888888; font-size:14px; text-indent:32px; display:block;
+    width:100%; height:35px; line-height:35px; overflow:hidden; background:url(../images/b_sh_2.png) no-repeat left center; color:#888888; font-size:14px; text-indent:32px; display:inline-block;
 }
 .b_tel_bg a.b_sh2:hover{
     color:#ff4e00;
@@ -2422,3 +2410,6 @@ ul.pay li.checked .ch_img{
 .btm img{
     display:inline-block; margin:15px 5px 5px 5px; border:1px solid #d9d9d9; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
 }
+
+
+

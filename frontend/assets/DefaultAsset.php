@@ -13,6 +13,8 @@ class DefaultAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/style.css',
+        'css/ShopShow.css',
+        'css/MagicZoom.css',
     ];
     public $js = [
         'js/jquery-1.11.1.min_044d0927.js',
@@ -27,6 +29,12 @@ class DefaultAsset extends AssetBundle
         'js/hban.jsjs/bban.js',
         'js/tban.js',
         'js/lrscroll_1.js',
+        'js/n_nav.js',
+        'js/MagicZoom.js',
+        'js/num.js',
+        'js/p_tab.js',
+        'js/shade.js',
+        'js/ShopShow.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

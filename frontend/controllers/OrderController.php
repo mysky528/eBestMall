@@ -10,16 +10,16 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\web\Controller;
 
-class OrderController extends IndexController {
+class OrderController extends Controller {
 
     public function actionIndex(){
-        if (Yii::$app->user->isGuest) {
-            echo "请登录";die;
-        }
         $this->layout = 'main-home';
         return $this->render("index");
-        //return $this->renderPartial("index");
+    }
 
+    public function actionCheck(){
+        return $this->render("check");
     }
 }

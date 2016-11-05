@@ -3,10 +3,9 @@
  * Created by PhpStorm.
  * User: Shadow
  * Q Q : 1527200768
- * Date: 2016/11/6
- * Time: 1:25
+ * Date: 2016/11/5
+ * Time: 14:42
  */
-
 use yii\helpers\Html;
 
 $this->title = Yii::$app->params['name_title'];
@@ -30,42 +29,12 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
 //$this->registerJsFile('js/lrscroll_1.js');
 
 ?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <!--[if IE 6]>
-    <script src="js/iepng.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        EvPNG.fix('div, ul, img, li, input, a');
-    </script>
-    <![endif]-->
-    <script type="text/javascript" src="js/jquery-1.11.1.min_044d0927.js"></script>
-    <script type="text/javascript" src="js/jquery.bxslider_e88acd1b.js"></script>
-
-    <script type="text/javascript" src= "js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
-
-    <script type="text/javascript" src="js/select.js"></script>
-
-    <script type="text/javascript" src="js/lrscroll.js"></script>
-
-    <script type="text/javascript" src="js/iban.js"></script>
-    <script type="text/javascript" src="js/fban.js"></script>
-    <script type="text/javascript" src="js/f_ban.js"></script>
-    <script type="text/javascript" src="js/mban.js"></script>
-    <script type="text/javascript" src="js/bban.js"></script>
-    <script type="text/javascript" src="js/hban.js"></script>
-    <script type="text/javascript" src="js/tban.js"></script>
-
-    <script type="text/javascript" src="js/lrscroll_1.js"></script>
-
-
-    <title>eBestMall - B2B2C商城系统</title>
-</head>
-<body>
+<!---->
+<!--    <script type="text/javascript" src="js/jquery-1.11.1.min_044d0927.js"></script>-->
+<!--    <script type="text/javascript" src="js/jquery.bxslider_e88acd1b.js"></script>-->
+<!---->
+<!--    <script type="text/javascript" src= "js/jquery-1.8.2.min.js"></script>-->
+<!--    <script type="text/javascript" src="js/menu.js"></script>-->
 <!--Begin Header Begin-->
 <div class="soubg">
     <div class="sou">
@@ -146,7 +115,11 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
         </span>
         <!--End 所在收货地区 End-->
         <span class="fr">
-        	<span class="fl"><?= Html::a('你好，请登录', ['member/login']) ?>&nbsp; <a href="<?= \yii\helpers\Url::to('member/regist')?>" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;<a href="<?= \yii\helpers\Url::to('order/index')?>">我的订单</a>&nbsp;|</span>
+        	<span class="fl">
+                <?= Html::a('你好，请登录', ['index/login']) ?>&nbsp;
+                <a href="<?= \yii\helpers\Url::to('index/regist')?>" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;
+                <?= Html::a('个人中心', ['home/index']) ?>&nbsp;|&nbsp;
+                <a href="#">我的订单</a>&nbsp;|</span>
         	<span class="ss">
             	<div class="ss_list">
                     <a href="#">收藏夹</a>
@@ -188,12 +161,12 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             </span>
             <span class="fl">|&nbsp;关注我们：</span>
             <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
-            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="<?= Yii::$app->homeUrl; ?>images/s_tel.png" align="absmiddle" /></a></span>
+            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="images/s_tel.png" align="absmiddle" /></a></span>
         </span>
     </div>
 </div>
 <div class="top">
-    <div class="logo"><a href="<?= Yii::$app->homeUrl; ?>"><img src="<?= Yii::$app->homeUrl; ?>images/logo.png" /></a></div>
+    <div class="logo"><a href="<?= Yii::$app->homeUrl; ?>"><img src="images/logo.png" /></a></div>
     <div class="search">
         <form>
             <input type="text" value="" class="s_ipt" />
@@ -210,23 +183,23 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             <!--Begin 购物车已登录 Begin-->
             <ul class="cars">
                 <li>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/car1.jpg" width="58" height="58" /></a></div>
+                    <div class="img"><a href="#"><img src="images/car1.jpg" width="58" height="58" /></a></div>
                     <div class="name"><a href="#">法颂浪漫梦境50ML 香水女士持久清新淡香 送2ML小样3只</a></div>
                     <div class="price"><font color="#ff4e00">￥399</font> X1</div>
                 </li>
                 <li>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/car2.jpg" width="58" height="58" /></a></div>
+                    <div class="img"><a href="#"><img src="images/car2.jpg" width="58" height="58" /></a></div>
                     <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
                     <div class="price"><font color="#ff4e00">￥399</font> X1</div>
                 </li>
                 <li>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/car2.jpg" width="58" height="58" /></a></div>
+                    <div class="img"><a href="#"><img src="images/car2.jpg" width="58" height="58" /></a></div>
                     <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
                     <div class="price"><font color="#ff4e00">￥399</font> X1</div>
                 </li>
             </ul>
             <div class="price_sum">共计&nbsp; <font color="#ff4e00">￥</font><span>1058</span></div>
-            <div class="price_a"><a href="<?= \yii\helpers\Url::to('cart/index')?>">去购物车结算</a></div>
+            <div class="price_a"><a href="#">去购物车结算</a></div>
             <!--End 购物车已登录 End-->
         </div>
     </div>
@@ -242,7 +215,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                 <ul>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav1.png" /></span>
+                            <span class="n_img"><span><img src="images/nav1.png" /></span></span>
                             <span class="fl">进口食品、生鲜</span>
                         </div>
                         <div class="zj">
@@ -285,14 +258,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav2.png" /></span>
+                            <span class="n_img"><span><img src="images/nav2.png" /></span></span>
                             <span class="fl">食品、饮料、酒</span>
                         </div>
                         <div class="zj" style="top:-40px;">
@@ -311,14 +284,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav3.png" /></span>
+                            <span class="n_img"><span><img src="images/nav3.png" /></span></span>
                             <span class="fl">母婴、玩具、童装</span>
                         </div>
                         <div class="zj" style="top:-80px;">
@@ -331,14 +304,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav4.png" /></span>
+                            <span class="n_img"><span><img src="images/nav4.png" /></span></span>
                             <span class="fl">家居、家庭清洁、纸品</span>
                         </div>
                         <div class="zj" style="top:-120px;">
@@ -351,14 +324,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav5.png" /></span>
+                            <span class="n_img"><span><img src="images/nav5.png" /></span></span>
                             <span class="fl">美妆、个人护理、洗护</span>
                         </div>
                         <div class="zj" style="top:-160px;">
@@ -371,14 +344,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav6.png" /></span>
+                            <span class="n_img"><span><img src="images/nav6.png" /></span></span>
                             <span class="fl">女装、内衣、中老年</span>
                         </div>
                         <div class="zj" style="top:-200px;">
@@ -391,14 +364,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav7.png" /></span>
+                            <span class="n_img"><span><img src="images/nav7.png" /></span></span>
                             <span class="fl">鞋靴、箱包、腕表配饰</span>
                         </div>
                         <div class="zj" style="top:-240px;">
@@ -411,14 +384,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav8.png" /></span>
+                            <span class="n_img"><span><img src="images/nav8.png" /></span></span>
                             <span class="fl">男装、运动</span>
                         </div>
                         <div class="zj" style="top:-280px;">
@@ -431,14 +404,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav9.png" /></span>
+                            <span class="n_img"><span><img src="images/nav9.png" /></span></span>
                             <span class="fl">手机、小家电、电脑</span>
                         </div>
                         <div class="zj" style="top:-320px;">
@@ -451,14 +424,14 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fj">
-                            <span class="n_img"><span></span><img src="<?= Yii::$app->homeUrl; ?>images/nav10.png" /></span>
+                            <span class="n_img"><span><img src="images/nav10.png" /></span></span>
                             <span class="fl">礼品、充值</span>
                         </div>
                         <div class="zj" style="top:-360px;">
@@ -471,8 +444,8 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </div>
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
@@ -500,9 +473,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
         <div class="banner">
             <div class="top_slide_wrap">
                 <ul class="slide_box bxslider">
-                    <li><img src="<?= Yii::$app->homeUrl; ?>images/ban1.jpg" width="740" height="401" /></li>
-                    <li><img src="<?= Yii::$app->homeUrl; ?>images/ban1.jpg" width="740" height="401" /></li>
-                    <li><img src="<?= Yii::$app->homeUrl; ?>images/ban1.jpg" width="740" height="401" /></li>
+                    <li><img src="images/ban1.jpg" width="740" height="401" /></li>
+                    <li><img src="images/ban1.jpg" width="740" height="401" /></li>
+                    <li><img src="images/ban1.jpg" width="740" height="401" /></li>
                 </ul>
                 <div class="op_btns clearfix">
                     <a href="#" class="op_btn op_prev"><span></span></a>
@@ -563,7 +536,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
     <!--Begin 热门商品 Begin-->
     <div class="content mar_10">
         <div class="h_l_img">
-            <div class="img"><img src="<?= Yii::$app->homeUrl; ?>images/l_img.jpg" width="188" height="188" /></div>
+            <div class="img"><img src="images/l_img.jpg" width="188" height="188" /></div>
             <div class="pri_bg">
                 <span class="price fl">￥53.00</span>
                 <span class="fr">16R</span>
@@ -577,9 +550,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                             <ul class="featureUL">
                                 <li class="featureBox">
                                     <div class="box">
-                                        <div class="h_icon"><img src="<?= Yii::$app->homeUrl; ?>images/hot.png" width="50" height="50" /></div>
+                                        <div class="h_icon"><img src="images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                            <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot1.jpg" width="160" height="136" /></a>
+                                            <a href="#"><img src="images/hot1.jpg" width="160" height="136" /></a>
                                         </div>
                                         <div class="name">
                                             <a href="#">
@@ -594,9 +567,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </li>
                                 <li class="featureBox">
                                     <div class="box">
-                                        <div class="h_icon"><img src="<?= Yii::$app->homeUrl; ?>images/hot.png" width="50" height="50" /></div>
+                                        <div class="h_icon"><img src="images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                            <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot2.jpg" width="160" height="136" /></a>
+                                            <a href="#"><img src="images/hot2.jpg" width="160" height="136" /></a>
                                         </div>
                                         <div class="name">
                                             <a href="#">
@@ -611,9 +584,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </li>
                                 <li class="featureBox">
                                     <div class="box">
-                                        <div class="h_icon"><img src="<?= Yii::$app->homeUrl; ?>images/hot.png" width="50" height="50" /></div>
+                                        <div class="h_icon"><img src="images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                            <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot3.jpg" width="160" height="136" /></a>
+                                            <a href="#"><img src="images/hot3.jpg" width="160" height="136" /></a>
                                         </div>
                                         <div class="name">
                                             <a href="#">
@@ -628,9 +601,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                                 </li>
                                 <li class="featureBox">
                                     <div class="box">
-                                        <div class="h_icon"><img src="<?= Yii::$app->homeUrl; ?>images/hot.png" width="50" height="50" /></div>
+                                        <div class="h_icon"><img src="images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                            <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot4.jpg" width="160" height="136" /></a>
+                                            <a href="#"><img src="images/hot4.jpg" width="160" height="136" /></a>
                                         </div>
                                         <div class="name">
                                             <a href="#">
@@ -661,9 +634,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
         <div class="i_sell">
             <div id="imgPlay">
                 <ul class="imgs" id="actor">
-                    <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_r.jpg" width="211" height="357" /></a></li>
-                    <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_r.jpg" width="211" height="357" /></a></li>
-                    <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_r.jpg" width="211" height="357" /></a></li>
+                    <li><a href="#"><img src="images/tm_r.jpg" width="211" height="357" /></a></li>
+                    <li><a href="#"><img src="images/tm_r.jpg" width="211" height="357" /></a></li>
+                    <li><a href="#"><img src="images/tm_r.jpg" width="211" height="357" /></a></li>
                 </ul>
                 <div class="previ">上一张</div>
                 <div class="nexti">下一张</div>
@@ -671,7 +644,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
         </div>
         <div class="sell_right">
             <div class="sell_1">
-                <div class="s_img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_1.jpg" width="185" height="155" /></a></div>
+                <div class="s_img"><a href="#"><img src="images/tm_1.jpg" width="185" height="155" /></a></div>
                 <div class="s_price">￥<span>89</span></div>
                 <div class="s_name">
                     <h2><a href="#">沙宣洗发水</a></h2>
@@ -679,7 +652,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                 </div>
             </div>
             <div class="sell_2">
-                <div class="s_img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_2.jpg" width="185" height="155" /></a></div>
+                <div class="s_img"><a href="#"><img src="images/tm_2.jpg" width="185" height="155" /></a></div>
                 <div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                     <h2><a href="#">德芙巧克力</a></h2>
@@ -687,7 +660,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                 </div>
             </div>
             <div class="sell_b1">
-                <div class="sb_img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_b1.jpg" width="242" height="356" /></a></div>
+                <div class="sb_img"><a href="#"><img src="images/tm_b1.jpg" width="242" height="356" /></a></div>
                 <div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                     <h2><a href="#">东北大米</a></h2>
@@ -695,7 +668,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                 </div>
             </div>
             <div class="sell_3">
-                <div class="s_img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_3.jpg" width="185" height="155" /></a></div>
+                <div class="s_img"><a href="#"><img src="images/tm_3.jpg" width="185" height="155" /></a></div>
                 <div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                     <h2><a href="#">迪奥香水</a></h2>
@@ -703,7 +676,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                 </div>
             </div>
             <div class="sell_4">
-                <div class="s_img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_4.jpg" width="185" height="155" /></a></div>
+                <div class="s_img"><a href="#"><img src="images/tm_4.jpg" width="185" height="155" /></a></div>
                 <div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                     <h2><a href="#">美妆</a></h2>
@@ -711,7 +684,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                 </div>
             </div>
             <div class="sell_b2">
-                <div class="sb_img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tm_b2.jpg" width="242" height="356" /></a></div>
+                <div class="sb_img"><a href="#"><img src="images/tm_b2.jpg" width="242" height="356" /></a></div>
                 <div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                     <h2><a href="#">美妆</a></h2>
@@ -722,7 +695,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
     </div>
     <!--End 限时特卖 End-->
     <div class="content mar_20">
-        <img src="<?= Yii::$app->homeUrl; ?>images/mban_1.jpg" width="1200" height="110" />
+        <img src="images/mban_1.jpg" width="1200" height="110" />
     </div>
     <!--Begin 进口 生鲜 Begin-->
     <div class="i_t mar_10">
@@ -735,9 +708,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             <div class="fre_ban">
                 <div id="imgPlay1">
                     <ul class="imgs" id="actor1">
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/fre_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/fre_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/fre_r.jpg" width="211" height="286" /></a></li>
                     </ul>
                     <div class="prevf">上一张</div>
                     <div class="nextf">下一张</div>
@@ -756,49 +729,49 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                     <div class="price">
                         <font>￥<span>198.00</span></font> &nbsp; 26R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_1.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/fre_1.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">新鲜美味  进口美食</a></div>
                     <div class="price">
                         <font>￥<span>198.00</span></font> &nbsp; 26R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_2.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/fre_2.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">新鲜美味  进口美食</a></div>
                     <div class="price">
                         <font>￥<span>198.00</span></font> &nbsp; 26R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_3.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/fre_3.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">新鲜美味  进口美食</a></div>
                     <div class="price">
                         <font>￥<span>198.00</span></font> &nbsp; 26R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_4.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/fre_4.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">新鲜美味  进口美食</a></div>
                     <div class="price">
                         <font>￥<span>198.00</span></font> &nbsp; 26R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_5.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/fre_5.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">新鲜美味  进口美食</a></div>
                     <div class="price">
                         <font>￥<span>198.00</span></font> &nbsp; 26R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_6.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/fre_6.jpg" width="185" height="155" /></a></div>
                 </li>
             </ul>
         </div>
         <div class="fresh_right">
             <ul>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_b1.jpg" width="260" height="220" /></a></li>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/fre_b2.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/fre_b1.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/fre_b2.jpg" width="260" height="220" /></a></li>
             </ul>
         </div>
     </div>
@@ -814,9 +787,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             <div class="food_ban">
                 <div id="imgPlay2">
                     <ul class="imgs" id="actor2">
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/food_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/food_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/food_r.jpg" width="211" height="286" /></a></li>
                     </ul>
                     <div class="prev_f">上一张</div>
                     <div class="next_f">下一张</div>
@@ -835,49 +808,49 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                     <div class="price">
                         <font>￥<span>96.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_1.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/food_1.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">莫斯利安酸奶</a></div>
                     <div class="price">
                         <font>￥<span>96.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_2.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/food_2.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">莫斯利安酸奶</a></div>
                     <div class="price">
                         <font>￥<span>96.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_3.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/food_3.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">莫斯利安酸奶</a></div>
                     <div class="price">
                         <font>￥<span>96.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_4.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/food_4.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">莫斯利安酸奶</a></div>
                     <div class="price">
                         <font>￥<span>96.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_5.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/food_5.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">莫斯利安酸奶</a></div>
                     <div class="price">
                         <font>￥<span>96.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_6.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/food_6.jpg" width="185" height="155" /></a></div>
                 </li>
             </ul>
         </div>
         <div class="fresh_right">
             <ul>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_b1.jpg" width="260" height="220" /></a></li>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/food_b2.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/food_b1.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/food_b2.jpg" width="260" height="220" /></a></li>
             </ul>
         </div>
     </div>
@@ -893,9 +866,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             <div class="make_ban">
                 <div id="imgPlay3">
                     <ul class="imgs" id="actor3">
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/make_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/make_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/make_r.jpg" width="211" height="286" /></a></li>
                     </ul>
                     <div class="prev_m">上一张</div>
                     <div class="next_m">下一张</div>
@@ -914,55 +887,55 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 16R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_1.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/make_1.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">美宝莲粉饼</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 16R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_2.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/make_2.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">美宝莲粉饼</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 16R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_3.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/make_3.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">美宝莲粉饼</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 16R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_4.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/make_4.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">美宝莲粉饼</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 16R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_5.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/make_5.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">美宝莲粉饼</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 16R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_6.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/make_6.jpg" width="185" height="155" /></a></div>
                 </li>
             </ul>
         </div>
         <div class="fresh_right">
             <ul>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_b1.jpg" width="260" height="220" /></a></li>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/make_b2.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/make_b1.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/make_b2.jpg" width="260" height="220" /></a></li>
             </ul>
         </div>
     </div>
     <!--End 个人美妆 End-->
     <div class="content mar_20">
-        <img src="<?= Yii::$app->homeUrl; ?>images/mban_1.jpg" width="1200" height="110" />
+        <img src="images/mban_1.jpg" width="1200" height="110" />
     </div>
     <!--Begin 母婴玩具 Begin-->
     <div class="i_t mar_10">
@@ -975,9 +948,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             <div class="baby_ban">
                 <div id="imgPlay4">
                     <ul class="imgs" id="actor4">
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/baby_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/baby_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/baby_r.jpg" width="211" height="286" /></a></li>
                     </ul>
                     <div class="prev_b">上一张</div>
                     <div class="next_b">下一张</div>
@@ -996,49 +969,49 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 20R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_1.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/baby_1.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 20R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_2.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/baby_2.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 20R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_3.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/baby_3.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 20R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_4.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/baby_4.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 20R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_5.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/baby_5.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
                     <div class="price">
                         <font>￥<span>260.00</span></font> &nbsp; 20R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_6.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/baby_6.jpg" width="185" height="155" /></a></div>
                 </li>
             </ul>
         </div>
         <div class="fresh_right">
             <ul>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_b1.jpg" width="260" height="220" /></a></li>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/baby_b2.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/baby_b1.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/baby_b2.jpg" width="260" height="220" /></a></li>
             </ul>
         </div>
     </div>
@@ -1054,9 +1027,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             <div class="home_ban">
                 <div id="imgPlay5">
                     <ul class="imgs" id="actor5">
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/home_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/home_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/home_r.jpg" width="211" height="286" /></a></li>
                     </ul>
                     <div class="prev_h">上一张</div>
                     <div class="next_h">下一张</div>
@@ -1075,49 +1048,49 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 50R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_1.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/home_1.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">品质蓝色沙发</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 50R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_2.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/home_2.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">品质蓝色沙发</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 50R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_3.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/home_3.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">品质蓝色沙发</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 50R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_4.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/home_4.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">品质蓝色沙发</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 50R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_5.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/home_5.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">品质蓝色沙发</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 50R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_6.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/home_6.jpg" width="185" height="155" /></a></div>
                 </li>
             </ul>
         </div>
         <div class="fresh_right">
             <ul>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_b1.jpg" width="260" height="220" /></a></li>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/home_b2.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/home_b1.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/home_b2.jpg" width="260" height="220" /></a></li>
             </ul>
         </div>
     </div>
@@ -1133,9 +1106,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             <div class="tel_ban">
                 <div id="imgPlay6">
                     <ul class="imgs" id="actor6">
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_r.jpg" width="211" height="286" /></a></li>
-                        <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/tel_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/tel_r.jpg" width="211" height="286" /></a></li>
+                        <li><a href="#"><img src="images/tel_r.jpg" width="211" height="286" /></a></li>
                     </ul>
                     <div class="prev_t">上一张</div>
                     <div class="next_t">下一张</div>
@@ -1154,49 +1127,49 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_1.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/tel_1.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">乐视高清电视</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_2.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/tel_2.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">乐视高清电视</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_3.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/tel_3.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">乐视高清电视</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_4.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/tel_4.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">乐视高清电视</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_5.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/tel_5.jpg" width="185" height="155" /></a></div>
                 </li>
                 <li>
                     <div class="name"><a href="#">乐视高清电视</a></div>
                     <div class="price">
                         <font>￥<span>2160.00</span></font> &nbsp; 25R
                     </div>
-                    <div class="img"><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_6.jpg" width="185" height="155" /></a></div>
+                    <div class="img"><a href="#"><img src="images/tel_6.jpg" width="185" height="155" /></a></div>
                 </li>
             </ul>
         </div>
         <div class="fresh_right">
             <ul>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_b1.jpg" width="260" height="220" /></a></li>
-                <li><a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/tel_b2.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/tel_b1.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="images/tel_b2.jpg" width="260" height="220" /></a></li>
             </ul>
         </div>
     </div>
@@ -1214,7 +1187,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                             <li class="featureBox">
                                 <div class="box">
                                     <div class="imgbg">
-                                        <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot1.jpg" width="160" height="136" /></a>
+                                        <a href="#"><img src="images/hot1.jpg" width="160" height="136" /></a>
                                     </div>
                                     <div class="name">
                                         <a href="#">
@@ -1230,7 +1203,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                             <li class="featureBox">
                                 <div class="box">
                                     <div class="imgbg">
-                                        <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot2.jpg" width="160" height="136" /></a>
+                                        <a href="#"><img src="images/hot2.jpg" width="160" height="136" /></a>
                                     </div>
                                     <div class="name">
                                         <a href="#">
@@ -1246,7 +1219,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                             <li class="featureBox">
                                 <div class="box">
                                     <div class="imgbg">
-                                        <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot3.jpg" width="160" height="136" /></a>
+                                        <a href="#"><img src="images/hot3.jpg" width="160" height="136" /></a>
                                     </div>
                                     <div class="name">
                                         <a href="#">
@@ -1262,7 +1235,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                             <li class="featureBox">
                                 <div class="box">
                                     <div class="imgbg">
-                                        <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot4.jpg" width="160" height="136" /></a>
+                                        <a href="#"><img src="images/hot4.jpg" width="160" height="136" /></a>
                                     </div>
                                     <div class="name">
                                         <a href="#">
@@ -1278,7 +1251,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
                             <li class="featureBox">
                                 <div class="box">
                                     <div class="imgbg">
-                                        <a href="#"><img src="<?= Yii::$app->homeUrl; ?>images/hot4.jpg" width="160" height="136" /></a>
+                                        <a href="#"><img src="images/hot4.jpg" width="160" height="136" /></a>
                                     </div>
                                     <div class="name">
                                         <a href="#">
@@ -1306,25 +1279,25 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
         <div class="b_btm">
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td width="72"><img src="<?= Yii::$app->homeUrl; ?>images/b1.png" width="62" height="62" /></td>
+                    <td width="72"><img src="images/b1.png" width="62" height="62" /></td>
                     <td><h2>正品保障</h2>正品行货  放心购买</td>
                 </tr>
             </table>
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td width="72"><img src="<?= Yii::$app->homeUrl; ?>images/b2.png" width="62" height="62" /></td>
+                    <td width="72"><img src="images/b2.png" width="62" height="62" /></td>
                     <td><h2>满38包邮</h2>满38包邮 免运费</td>
                 </tr>
             </table>
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td width="72"><img src="<?= Yii::$app->homeUrl; ?>images/b3.png" width="62" height="62" /></td>
+                    <td width="72"><img src="images/b3.png" width="62" height="62" /></td>
                     <td><h2>天天低价</h2>天天低价 畅选无忧</td>
                 </tr>
             </table>
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td width="72"><img src="<?= Yii::$app->homeUrl; ?>images/b4.png" width="62" height="62" /></td>
+                    <td width="72"><img src="images/b4.png" width="62" height="62" /></td>
                     <td><h2>准时送达</h2>收货时间由你做主</td>
                 </tr>
             </table>
@@ -1372,23 +1345,15 @@ $this->registerMetaTag(['name' => 'description', 'content' => 'eBestMall是国�
             </p>
         </div>
         <div class="b_er">
-            <div class="b_er_c"><img src="<?= Yii::$app->homeUrl; ?>images/er.gif" width="118" height="118" /></div>
-            <img src="<?= Yii::$app->homeUrl; ?>images/ss.png" />
+            <div class="b_er_c"><img src="images/er.gif" width="118" height="118" /></div>
+            <img src="images/ss.png" />
         </div>
     </div>
     <div class="btmbg">
         <div class="btm">
             备案/许可证编号：贵ICP备00000000号 www.hongyuvip.com   Copyright © 2015-2018 eBestMall商城 All Rights Reserved. 复制必究 , Technical Support: HongYuKeJi <br />
-            <img src="<?= Yii::$app->homeUrl; ?>images/b_1.gif" width="98" height="33" /><img src="<?= Yii::$app->homeUrl; ?>images/b_2.gif" width="98" height="33" /><img src="<?= Yii::$app->homeUrl; ?>images/b_3.gif" width="98" height="33" /><img src="<?= Yii::$app->homeUrl; ?>images/b_4.gif" width="98" height="33" /><img src="<?= Yii::$app->homeUrl; ?>images/b_5.gif" width="98" height="33" /><img src="<?= Yii::$app->homeUrl; ?>images/b_6.gif" width="98" height="33" />
+            <img src="images/b_1.gif" width="98" height="33" /><img src="images/b_2.gif" width="98" height="33" /><img src="images/b_3.gif" width="98" height="33" /><img src="images/b_4.gif" width="98" height="33" /><img src="images/b_5.gif" width="98" height="33" /><img src="images/b_6.gif" width="98" height="33" />
         </div>
     </div>
     <!--End Footer End -->
 </div>
-
-</body>
-
-
-<!--[if IE 6]>
-<script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
-<![endif]-->
-</html>

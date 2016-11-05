@@ -10,17 +10,10 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\web\Controller;
 
-class HomeController extends IndexController {
-
-    public $layout = 'main-home';
-
+class CartController extends Controller {
     public function actionIndex(){
-        if (Yii::$app->user->isGuest) {
-            echo "请登录";die;
-
-        }
         return $this->render("index");
-
     }
 }

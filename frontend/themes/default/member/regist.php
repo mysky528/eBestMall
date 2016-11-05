@@ -1,15 +1,19 @@
-<!--Begin Header Begin-->
-<div class="soubg" style="display: none">
-    <div class="sou">
-        <span class="fr">
-        	<span class="fl"><a href="Login.html">你好，请登录</a>&nbsp; <a href="Regist.html" style="color:#ff4e00;">免费注册</a></span>
-            <span class="fl">&nbsp;|&nbsp;关注我们：</span>
-            <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
-            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="<?= Yii::$app->homeUrl; ?>images/s_tel.png" align="absmiddle" /></a></span>
-        </span>
-    </div>
-</div>
-<!--End Header End-->
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Shadow
+ * Q Q : 1527200768
+ * Date: 2016/11/6
+ * Time: 1:31
+ */
+
+use yii\helpers\Html;
+
+$this->title = '会员注册';
+$this->params['breadcrumbs'][] = $this->title;
+
+?>
+
 <div class="top">
     <div class="logo"><a href="<?= Yii::$app->homeUrl; ?>"><img src="<?= Yii::$app->homeUrl; ?>images/logo.png" /></a></div>
 </div>
@@ -25,7 +29,7 @@
                         <td width="95">&nbsp;</td>
                         <td>
                             <span class="fl" style="font-size:24px;">注册</span>
-                            <span class="fr">已有商城账号，<a href="Login.html" style="color:#ff4e00;">我要登录</a></span>
+                            <span class="fr">已有商城账号，<a href="<?= \yii\helpers\Url::toRoute(['member/login']); ?>" style="color:#ff4e00;">我要登录</a></span>
                         </td>
                     </tr>
                     <tr height="50">
