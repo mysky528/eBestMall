@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "dmstr/yii2-adminlte-asset": "2.*",
-        "mdmsoft/yii2-admin": "2.x-dev"
+        "mdmsoft/yii2-admin": "2.x-dev",
+        "crazyfd/yii2-qiniu": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
