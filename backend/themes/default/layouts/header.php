@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 <header class="main-header">
 
-    <?= Html::a('<span class="logo-mini">EBM</span><span class="logo-lg">' . Yii::$app->name . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
+    <?= Html::a('<span class="logo-mini"><i class="fa fa-home"></i></span><span class="logo-lg">' . Yii::$app->name . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
 
     <nav class="navbar navbar-static-top" role="navigation">
 
@@ -19,6 +19,11 @@ use yii\helpers\Html;
 
             <ul class="nav navbar-nav">
 
+                <li class="dropdown">
+                    <a href="<?=  Yii::$app->params['shop_url']?>" target="_blank" title="<?=  Yii::$app->params['name']?>">
+                        <i class="fa fa-tv"></i>
+                    </a>
+                </li>
                 <!-- Messages: style can be found in dropdown.less-->
                 <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
