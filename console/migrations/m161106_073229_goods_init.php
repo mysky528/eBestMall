@@ -20,12 +20,12 @@ class m161106_073229_goods_init extends Migration
             'title' => $this->string(200)->notNull()->defaultValue(''),
             'descr' => $this->text(),
             'num' => $this->bigInteger()->unsigned()->notNull()->defaultValue('0'),
-            'price' => $this->decimal(10,2)->notNull()->defaultValue('00000000.00'),
+            'price' => $this->decimal(10,2)->notNull()->defaultValue('0.00'),
             'cover' => $this->string(200)->notNull()->defaultValue(''),
             'pics' => $this->text(),
-            'is_sale' => $this->string(1)->unsigned()->notNull()->defaultValue('0'),
-            'sale_price' => $this->decimal(10,2)->notNull()->defaultValue('00000000.00'),
-            'is_hot' => $this->string(1)->unsigned()->notNull()->defaultValue('0'),
+            'is_sale' => $this->smallInteger()->unsigned()->notNull()->defaultValue('0'),
+            'sale_price' => $this->decimal(10,2)->notNull()->defaultValue('0.00'),
+            'is_hot' => $this->smallInteger()->unsigned()->notNull()->defaultValue('0'),
             'create_time' => $this->integer()->unsigned()->notNull()->defaultValue('0'),
 
             'KEY '. self::TBL_NAME .' (create_id)'
